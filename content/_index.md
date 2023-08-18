@@ -10,6 +10,8 @@ chapter : false
 
 In this workshop, we will explore how to configure **high-resolution alarm** in AWS CloudWatch and enhance your monitoring capabilities by sending notifications to both **Slack** and **Email**, ensuring you stay informed about critical events with the lowest latency.
 
+I've created a **hands-on video** for this workshop, and you can watch it by visiting [Configure High-resolution Alarm](https://youtu.be/aUVteLrlZ2s).
+
 ![High-Resolution Alarm](/images/arc-high-resolution-alarm.png) 
 
 ### Content

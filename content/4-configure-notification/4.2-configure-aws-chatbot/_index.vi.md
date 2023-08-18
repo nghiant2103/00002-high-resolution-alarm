@@ -6,72 +6,72 @@ chapter : false
 pre : "<b>4.2 </b>"
 ---
 
-AWS Chatbot is a powerful tool that facilitates seamless communication and collaboration within your AWS environment by integrating with popular chat platforms like Slack. With AWS Chatbot, you can receive real-time notifications, alerts, and updates from various AWS services directly in your preferred chat channel. In this comprehensive step-by-step guide, we'll walk you through the process of configuring AWS Chatbot, enabling you to stay informed, collaborate efficiently, and take swift actions based on the notifications you receive.
+AWS Chatbot là một công cụ mạnh mẽ hỗ trợ giao tiếp và cộng tác liền mạch trong môi trường AWS của bạn bằng cách tích hợp với các nền tảng trò chuyện phổ biến như Slack. Với AWS Chatbot, bạn có thể nhận thông báo, cảnh báo và cập nhật theo thời gian thực từ các dịch vụ AWS khác nhau trực tiếp trong kênh trò chuyện ưa thích của mình. Trong bước này, tôi sẽ hướng dẫn bạn quy trình cấu hình AWS Chatbot, cho phép bạn luôn cập nhật thông tin, cộng tác hiệu quả và thực hiện hành động nhanh chóng dựa trên thông báo bạn nhận được.
 
-#### Navigate to AWS Chatbot
+#### Truy cập AWS Chatbot
 
 ![Configure AWS Chatbot](/images/4-configure-notification/4.2-configure-aws-chatbot/001-configure-aws-chatbot.png)
 
-#### Configure Chat client
+#### Cấu hình Chat client
 
-1. In **Chat client** select **Slack**.
+1. Tại mục **Chat client** chọn **Slack**.
 
 ![Configure AWS Chatbot](/images/4-configure-notification/4.2-configure-aws-chatbot/002-configure-aws-chatbot.png)
 
-2. Click on **Configure client**.
+2. Chọn **Configure client**.
 
 ![Configure AWS Chatbot](/images/4-configure-notification/4.2-configure-aws-chatbot/003-configure-aws-chatbot.png)
 
-3. Select your **Slack workspace**, then click on **Allow**.
+3. Chọn **Slack workspace** của bạn, rồi chọn **Allow**.
 
 ![Configure AWS Chatbot](/images/4-configure-notification/4.2-configure-aws-chatbot/004-configure-aws-chatbot.png)
 
-#### Configure Slack channel
+#### Cấu hình Slack channel
 
-1. Click on **Configure new channel**.
+1. Chọn **Configure new channel**.
 
 ![Configure AWS Chatbot](/images/4-configure-notification/4.2-configure-aws-chatbot/005-configure-aws-chatbot.png)
 
-2. In **Configuration name** field, enter `cw-alarm-configuration`.
-3. Select the **channel** that AWS Chatbot will send notifications to.
+2. Tại mục **Configuration name**, nhập `cw-alarm-configuration`.
+3. Chọn **channel** mà AWS Chatbot sẽ gửi thông báo đến.
 
 ![Configure AWS Chatbot](/images/4-configure-notification/4.2-configure-aws-chatbot/006-configure-aws-chatbot.png)
 
-4. In **Role name** field, enter `AWSChatbot-role`.
+4. Tại mục **Role name**, nhập `AWSChatbot-role`.
 
 ![Configure AWS Chatbot](/images/4-configure-notification/4.2-configure-aws-chatbot/007-configure-aws-chatbot.png)
 
-5. Select the **Region** that Topic **AlarmTopic** has been created in.
+5. Chọn **Region** mà Topic **AlarmTopic** đã được tạo trong đó.
 
 ![Configure AWS Chatbot](/images/4-configure-notification/4.2-configure-aws-chatbot/008-configure-aws-chatbot.png)
 
-6. Select **Topic**.
+6. Chọn **Topic**.
 
 ![Configure AWS Chatbot](/images/4-configure-notification/4.2-configure-aws-chatbot/009-configure-aws-chatbot.png)
 
-7. Click on **Configure**.
+7. Chọn **Configure**.
 
 ![Configure AWS Chatbot](/images/4-configure-notification/4.2-configure-aws-chatbot/010-configure-aws-chatbot.png)
 
-#### Add AWS App to Slack channel
+#### Thêm AWS App vào Slack channel
 
-1. Click on **Add an App**.
+1. Chọn **Add an App**.
 
 ![Configure AWS Chatbot](/images/4-configure-notification/4.2-configure-aws-chatbot/011-configure-aws-chatbot.png)
 
-2. Click on **Add**.
+2. Chọn **Add**.
 
 ![Configure AWS Chatbot](/images/4-configure-notification/4.2-configure-aws-chatbot/012-configure-aws-chatbot.png)
 
-#### Test Notifications
+#### Kiểm tra thông báo
 
-1. Choose **cw-alarm-configuration**.
-2. Click on **Send test message**.
+1. Chọn **cw-alarm-configuration**.
+2. Chọn **Send test message**.
 
 ![Configure AWS Chatbot](/images/4-configure-notification/4.2-configure-aws-chatbot/013-configure-aws-chatbot.png)
 
-3. The message was sent successfully.
+3. Tin nhắn đã được gửi thành công.
 
 ![Configure AWS Chatbot](/images/4-configure-notification/4.2-configure-aws-chatbot/014-configure-aws-chatbot.png)
 
-Next step we will update CloudWatch Alarm Notification.
+Bước tiếp theo, chúng ta sẽ cập nhật **CloudWatch Alarm Notification**.

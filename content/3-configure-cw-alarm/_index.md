@@ -6,7 +6,7 @@ chapter : false
 pre : "<b>3. </b>"
 ---
 
-Amazon CloudWatch provides a comprehensive monitoring solution for your AWS resources, allowing you to gain insights into their performance, health, and operational status. One essential feature of CloudWatch is the ability to create alarms that notify you when specific thresholds are breached. In this step-by-step guide, we will walk you through the process of configuring CloudWatch alarms to enhance your monitoring strategy and ensure timely notifications for critical events.
+Amazon CloudWatch provides a comprehensive monitoring solution for your AWS resources, allowing you to gain insights into their performance, health, and operational status. One essential feature of CloudWatch is the ability to create alarms that notify you when specific thresholds are breached. In this step-by-step guide, I will walk you through the process of configuring CloudWatch alarms to enhance your monitoring strategy and ensure timely notifications for critical events.
 
 #### Navigate to AWS CloudWatch
 - Choose **All alarms**.

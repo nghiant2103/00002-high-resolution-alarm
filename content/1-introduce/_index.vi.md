@@ -17,7 +17,7 @@ pre : "<b>1. </b>"
 
 1. **Cảnh báo theo thời gian thực**: Thông báo qua email cung cấp cảnh báo tức thời về các sự kiện, cho phép phản ứng nhanh với các sự cố nghiêm trọng.
 2. **Phạm vi rộng**: Email có thể được gửi tới nhiều người nhận, đảm bảo rằng các bên liên quan phù hợp được thông báo kịp thời.
-3. **Escalation Path**: Bạn có thể định cấu hình Escalation Path, đảm bảo rằng cảnh báo đến được nhân viên phù hợp dựa trên mức độ nghiêm trọng.
+3. **Escalation Path**: Bạn có thể cấu hình Escalation Path, đảm bảo rằng cảnh báo đến được nhân viên phù hợp dựa trên mức độ nghiêm trọng.
 4. **Thông tin chi tiết**: Email có thể bao gồm các chi tiết toàn diện về sự kiện, giúp khắc phục sự cố nhanh chóng.
 
 ### Sử dụng Slack để giám sát

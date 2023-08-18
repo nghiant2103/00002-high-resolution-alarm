@@ -6,7 +6,7 @@ chapter : false
 pre : "<b>4.2 </b>"
 ---
 
-AWS Chatbot is a powerful tool that facilitates seamless communication and collaboration within your AWS environment by integrating with popular chat platforms like Slack. With AWS Chatbot, you can receive real-time notifications, alerts, and updates from various AWS services directly in your preferred chat channel. In this comprehensive step-by-step guide, we'll walk you through the process of configuring AWS Chatbot, enabling you to stay informed, collaborate efficiently, and take swift actions based on the notifications you receive.
+AWS Chatbot is a powerful tool that facilitates seamless communication and collaboration within your AWS environment by integrating with popular chat platforms like Slack. With AWS Chatbot, you can receive real-time notifications, alerts, and updates from various AWS services directly in your preferred chat channel. In this comprehensive step-by-step guide, I'll walk you through the process of configuring AWS Chatbot, enabling you to stay informed, collaborate efficiently, and take swift actions based on the notifications you receive.
 
 #### Navigate to AWS Chatbot
 
@@ -74,4 +74,4 @@ AWS Chatbot is a powerful tool that facilitates seamless communication and colla
 
 ![Configure AWS Chatbot](/images/4-configure-notification/4.2-configure-aws-chatbot/014-configure-aws-chatbot.png)
 
-Next step we will update CloudWatch Alarm Notification.
+Next step we will update **CloudWatch Alarm Notification**.

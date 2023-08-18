@@ -6,7 +6,7 @@ chapter : false
 pre : "<b>4.3 </b>"
 ---
 
-Amazon CloudWatch Alarms provide a mechanism for monitoring metrics and triggering actions when specific conditions are met. Configuring actions for CloudWatch alarms, such as sending notifications to Amazon SNS (Simple Notification Service), allows you to receive timely alerts about important events in your AWS environment. In this comprehensive guide, we will walk you through the process of updating the action of a CloudWatch alarm to send notifications via Amazon SNS.
+Amazon CloudWatch Alarms provide a mechanism for monitoring metrics and triggering actions when specific conditions are met. Configuring actions for CloudWatch alarms, such as sending notifications to Amazon SNS (Simple Notification Service), allows you to receive timely alerts about important events in your AWS environment. In this comprehensive guide, I will walk you through the process of updating the action of a CloudWatch alarm to send notifications via Amazon SNS.
 
 #### Navigate to CloudWatch Alarm
 

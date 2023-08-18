@@ -6,9 +6,9 @@ chapter : false
 pre : "<b>4. </b>"
 ---
 
-In this step, we will establish the configuration for sending notifications via Amazon SNS to **email addresses**, and concurrently set up AWS Chatbot to deliver notifications to **Slack channel**.
+Trong bước này, chúng ta sẽ thiết lập cấu hình để gửi thông báo qua Amazon SNS tới **địa chỉ email**, đồng thời thiết lập AWS Chatbot để gửi thông báo tới **Slack channel**.
 
-### Content
+### Nội dung
 
 4.1. [Cấu hình SNS](4.1-configure-sns/)\
 4.2. [Cấu hình AWS Chatbot](4.2-configure-aws-chatbot/)\

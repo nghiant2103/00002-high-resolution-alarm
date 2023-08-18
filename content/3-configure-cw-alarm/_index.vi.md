@@ -6,79 +6,79 @@ chapter : false
 pre : "<b>3. </b>"
 ---
 
-Amazon CloudWatch provides a comprehensive monitoring solution for your AWS resources, allowing you to gain insights into their performance, health, and operational status. One essential feature of CloudWatch is the ability to create alarms that notify you when specific thresholds are breached. In this step-by-step guide, we will walk you through the process of configuring CloudWatch alarms to enhance your monitoring strategy and ensure timely notifications for critical events.
+Amazon CloudWatch cung cấp giải pháp giám sát toàn diện cho các tài nguyên AWS của bạn, cho phép bạn hiểu rõ hơn về hiệu suất, tình trạng và trạng thái hoạt động của chúng. Một tính năng thiết yếu của CloudWatch là khả năng tạo cảnh báo để thông báo cho bạn khi các ngưỡng cụ thể bị vi phạm. Trong bước này, tôi sẽ hướng dẫn bạn quy trình cấu hình cảnh báo CloudWatch để nâng cao chiến lược giám sát của bạn và đảm bảo thông báo kịp thời cho các sự kiện quan trọng.
 
-#### Navigate to AWS CloudWatch
-- Choose **All alarms**.
+#### Truy cập AWS CloudWatch
+- Chọn **All alarms**.
 
 ![Configure CloudWatch Alarm](/images/3-configure-cw-alarm/001-configure-cw-alarm.png)
 
-#### Create a new alarm
+#### Tạo một cảnh báo mới
 
-- Click on **Create alarm**.
+- Chọn **Create alarm**.
 
 ![Configure CloudWatch Alarm](/images/3-configure-cw-alarm/002-configure-cw-alarm.png)
 
-#### Select metric
+#### Chọn metric
 
-1. Click on **Select metric**.
+1. Chọn **Select metric**.
 
 ![Configure CloudWatch Alarm](/images/3-configure-cw-alarm/003-configure-cw-alarm.png)
 
-2. In **Custom namespaces** section, click on **WorkshopCWAgent**.
+2. Trong phần **Custom namespaces**, chọn **WorkshopCWAgent**.
 
 ![Configure CloudWatch Alarm](/images/3-configure-cw-alarm/004-configure-cw-alarm.png)
 
-3. Click on **InstanceID**.
+3. Chọn **InstanceID**.
 
 ![Configure CloudWatch Alarm](/images/3-configure-cw-alarm/005-configure-cw-alarm.png)
 
-4. Select RAM metric.
+4. Chọn RAM metric.
 
 ![Configure CloudWatch Alarm](/images/3-configure-cw-alarm/006-configure-cw-alarm.png)
 
-5 Click on **Select metric**.
+5 Chọn **Select metric**.
 
 ![Configure CloudWatch Alarm](/images/3-configure-cw-alarm/007-configure-cw-alarm.png)
 
 #### Period
 
-- Select period 10s.
+- Chọn period 10s.
 
 ![Configure CloudWatch Alarm](/images/3-configure-cw-alarm/008-configure-cw-alarm.png)
 
 #### Conditions
 
-- Configure alarm condition.
+- Cấu hình điều kiện cảnh báo.
 
 ![Configure CloudWatch Alarm](/images/3-configure-cw-alarm/009-configure-cw-alarm.png)
 
 #### Notification
 
-- Remove Notification configure, we will configure later.
+- Bỏ cấu hình Notification đi, chúng ta sẽ cấu hình sau.
 
 ![Configure CloudWatch Alarm](/images/3-configure-cw-alarm/010-configure-cw-alarm.png)
 
-#### Alarm name
+#### Tên cảnh báo
 
-- In the **Alarm name** field, enter `RAM Alarm`.
+- Tại mục **Alarm name**, nhập `RAM Alarm`.
 
 ![Configure CloudWatch Alarm](/images/3-configure-cw-alarm/011-configure-cw-alarm.png)
 
-#### Preview and create alarm
+#### Xem trước và tạo cảnh báo
 
-- Review the alarm configuration, then click on Create alarm.
+-  Xem lại cấu hình cảnh báo, rồi chọn Create alarm.
 
 ![Configure CloudWatch Alarm](/images/3-configure-cw-alarm/012-configure-cw-alarm.png)
 
-#### Alarm status
+#### Trạng thái cảnh báo
 
-- During the initial few minutes, the state may display **Insufficient** data.
+- Trong vài phút đầu tiên, trạng thái có thể hiển thị dữ liệu **Insufficient**.
 
 ![Configure CloudWatch Alarm](/images/3-configure-cw-alarm/013-configure-cw-alarm.png)
 
-- However, it will display **OK** shortly thereafter.
+- Tuy nhiên, nó sẽ hiển thị **OK** ngay sau đó.
 
 ![Configure CloudWatch Alarm](/images/3-configure-cw-alarm/014-configure-cw-alarm.png)
 
-In the upcoming step, we will set up the configuration for SNS and AWS Chatbot to send alerts via Email and Slack.
+Trong bước tiếp theo, chúng ta sẽ thiết lập cấu hình cho SNS và AWS Chatbot để gửi cảnh báo qua Email và Slack.

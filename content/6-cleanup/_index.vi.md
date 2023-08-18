@@ -6,60 +6,60 @@ chapter : false
 pre : "<b>6. </b>"
 ---
 
-We will take the following steps to delete the resources we created in this exercise.
+Chúng ta sẽ thực hiện các bước sau để xóa các tài nguyên mà chúng ta đã tạo trong workshop này.
 
-#### Delete EC2 instance
+#### Xóa EC2 instance
 
-- Go to [EC2 service management console](https://console.aws.amazon.com/ec2/v2/home)
-  + Click **Instances**.
-  + Select **server** instance.
-  + Click **Instance state**.
-  + Click **Terminate instance**, then click **Terminate** to confirm.
+- Truy cập [EC2 service management console](https://console.aws.amazon.com/ec2/v2/home)
+  + Chọn **Instances**.
+  + Chọn **server** instance.
+  + Chọn **Instance state**.
+  + Chọn **Terminate instance**, rồi chọn **Terminate** để xác nhận.
 
 ![Cleanup](/images/6-cleanup/001-cleanup.png)
 
-#### Delete IAM Role
+#### Xóa IAM Role
 
-- Go to [IAM service management console](https://console.aws.amazon.com/iamv2/home#/home)
-  + Click **Roles**.
-  + In the search box, enter `EC2CWAgentRole`.
-  + Click to select **EC2CWAgentRole**.
-  + Click **Delete**, then enter the role name **EC2CWAgentRole** and click **Delete** to delete the role.
+- Truy cập [IAM service management console](https://console.aws.amazon.com/iamv2/home#/home)
+  + Chọn **Roles**.
+  + Trong search box, nhập `EC2CWAgentRole`.
+  + Chọn **EC2CWAgentRole**.
+  + Chọn **Delete**, rồi nhập tên role **EC2CWAgentRole** và chọn **Delete** để xóa role.
 
 ![Cleanup](/images/6-cleanup/002-cleanup.png)
 
-#### Delete VPC
+#### Xóa VPC
 
-1. Go to [VPC service management console](https://console.aws.amazon.com/vpc/home)
-    + Click **Your VPCs**.
-    + Click on **cw-agent-vpc**.
-    + Click **Actions**.
-    + Click **Delete VPC**.
+1. Truy cập [VPC service management console](https://console.aws.amazon.com/vpc/home)
+    + Chọn **Your VPCs**.
+    + Chọn **cw-agent-vpc**.
+    + Chọn **Actions**.
+    + Chọn **Delete VPC**.
 
-2. In the confirm box, enter **delete** to confirm, click **Delete** to delete **cw-agent-vpc** and related resources.
+2. Trong confirm box, nhập **delete** để xác nhận, chọn **Delete** để xóa **cw-agent-vpc** và các tài nguyên liên quan.
 
 ![Cleanup](/images/6-cleanup/003-cleanup.png)
 
-#### Delete Alarm
+#### Xóa Alarm
 
 ![Cleanup](/images/6-cleanup/004-cleanup.png)
 
-#### Remove Slack workspace
+#### Xóa Slack workspace
 
-1. Delete configurations.
+1. Xóa configurations.
 
 ![Cleanup](/images/6-cleanup/005-cleanup.png)
 
-2. Remove workspace configuration.
+2. Xóa cấu hình workspace.
 
 ![Cleanup](/images/6-cleanup/006-cleanup.png)
 
-#### Delete SNS Topic and Subscription
+#### Xóa SNS Topic và Subscription
 
-1. Delete **Subscription**.
+1. Xóa **Subscription**.
 
 ![Cleanup](/images/6-cleanup/007-cleanup.png)
 
-2. Delete **Topic**.
+2. Xóa **Topic**.
 
 ![Cleanup](/images/6-cleanup/008-cleanup.png)

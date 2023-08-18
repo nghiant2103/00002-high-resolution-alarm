@@ -6,82 +6,82 @@ chapter : false
 pre : "<b>4.1 </b>"
 ---
 
-Amazon Simple Notification Service (Amazon SNS) is a powerful messaging service that enables you to send notifications to various endpoints, including email addresses. When integrated with Amazon CloudWatch, you can configure CloudWatch alarms to trigger Amazon SNS notifications, ensuring that you receive timely email alerts when specific conditions are met. In this step-by-step guide, we'll walk you through the process of setting up Amazon SNS email notifications and adding SNS actions to your CloudWatch alarms.
+Amazon Simple Notification Service (Amazon SNS) là một dịch vụ nhắn tin mạnh mẽ cho phép bạn gửi thông báo đến nhiều điểm cuối khác nhau, bao gồm cả địa chỉ email. Khi được tích hợp với Amazon CloudWatch, bạn có thể cấu hình cảnh báo của CloudWatch để kích hoạt thông báo của Amazon SNS, đảm bảo rằng bạn nhận được thông báo kịp thời qua email khi các điều kiện cụ thể được đáp ứng. Trong hướng dẫn từng bước này, chúng ta sẽ hướng dẫn bạn quy trình thiết lập thông báo email Amazon SNS và thêm SNS vào cảnh báo CloudWatch của bạn.
 
-### Create topic
-#### Navigate to Amazon SNS
+### Tạo topic
+#### Truy cập Amazon SNS
 
-1. Click on **Topics**.
+1. Chọn **Topics**.
 
 ![Configure SNS](/images/4-configure-notification/4.1-configure-sns/001-configure-sns.png)
 
-2. Click on **Create topic**.
+2. Chọn **Create topic**.
 
 ![Configure SNS](/images/4-configure-notification/4.1-configure-sns/002-configure-sns.png)
 
-#### Create topic
+#### Tạo topic
 
-1. In the **Name** field, enter `AlarmTopic`.
-2. In the **Display name** field, enter `Alarm Topic`.
+1. Tại mục **Name**, nhập `AlarmTopic`.
+2. Tại mục **Display name**, nhập `Alarm Topic`.
 
 ![Configure SNS](/images/4-configure-notification/4.1-configure-sns/003-configure-sns.png)
 
-3. Click on **Create topic**.
+3. Chọn **Create topic**.
 
 ![Configure SNS](/images/4-configure-notification/4.1-configure-sns/004-configure-sns.png)
 
 
-### Create subscription
+### Tạo subscription
 
-#### Navigate to Amazon SNS
+#### Truy cập Amazon SNS
 
-1. Choose **Subscriptions**.
+1. Chọn **Subscriptions**.
 
 ![Configure SNS](/images/4-configure-notification/4.1-configure-sns/005-configure-sns.png)
 
-2 Click on **Create subscription**.
+2 Chọn **Create subscription**.
 
 ![Configure SNS](/images/4-configure-notification/4.1-configure-sns/006-configure-sns.png)
 
-#### Create subscription
+#### Tạo subscription
 
-1. Choose **Topic ARN**.
+1. Chọn **Topic ARN**.
 
 ![Configure SNS](/images/4-configure-notification/4.1-configure-sns/007-configure-sns.png)
 
-2. Choose **Email Protocol**
+2. Chọn **Email Protocol**
 
 ![Configure SNS](/images/4-configure-notification/4.1-configure-sns/008-configure-sns.png)
 
-3. Enter **your email address** that can receive notifications from Amazon SNS.
+3. Nhập **địa chỉ email của bạn** để nhận thông báo từ Amazon SNS..
 
 ![Configure SNS](/images/4-configure-notification/4.1-configure-sns/009-configure-sns.png)
 
-4. Click on **Create subscription**.
+4. Chọn **Create subscription**.
 
 ![Configure SNS](/images/4-configure-notification/4.1-configure-sns/010-configure-sns.png)
 
-#### Comfirm subcription
+#### Xác nhận subcription
 
 ![Configure SNS](/images/4-configure-notification/4.1-configure-sns/011-configure-sns.png)
 
-#### Test Notifications
+#### Kiểm tra thông báo
 
-1. Navigate to **AlarmTopic**.
-2. Choose **Publish message**.
+1. Truy cập **AlarmTopic**.
+2. Chọn **Publish message**.
 
 ![Configure SNS](/images/4-configure-notification/4.1-configure-sns/012-configure-sns.png)
 
-3. Enter **Subject** and **Message body**.
+3. Nhập **Subject** và **Message body**.
 
 ![Configure SNS](/images/4-configure-notification/4.1-configure-sns/013-configure-sns.png)
 
-4. Click on **Publish message**.
+4. Chọn **Publish message**.
 
 ![Configure SNS](/images/4-configure-notification/4.1-configure-sns/014-configure-sns.png)
 
-5. The message was sent successfully.
+5. Tin nhắn đã được gửi thành công.
 
 ![Configure SNS](/images/4-configure-notification/4.1-configure-sns/015-configure-sns.png)
 
-Next step we will configuring AWS Chatbot.
+Bước tiếp theo chúng ta sẽ cấu hình AWS Chatbot.
